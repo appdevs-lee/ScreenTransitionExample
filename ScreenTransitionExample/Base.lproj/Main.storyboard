@@ -70,18 +70,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-dx-I61">
-                                <rect key="frame" x="180" y="351" width="56" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-dx-I61">
+                                <rect key="frame" x="24" y="460" width="366" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back"/>
                                 <connections>
                                     <action selector="tapBackButton:" destination="CFg-XU-Tce" eventType="touchUpInside" id="Ad6-6b-g8j"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segue로 push" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-I1-rEZ">
-                                <rect key="frame" x="132" y="265" width="150" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Segue로 push" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PB-I1-rEZ">
+                                <rect key="frame" x="24" y="406" width="366" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,6 +87,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6OQ-qh-R8e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Zg-dx-I61" firstAttribute="top" secondItem="8PB-I1-rEZ" secondAttribute="bottom" constant="24" id="AGh-8P-9Bc"/>
+                            <constraint firstItem="8PB-I1-rEZ" firstAttribute="top" secondItem="6OQ-qh-R8e" secondAttribute="top" constant="24" id="WGr-99-ueM"/>
+                            <constraint firstItem="3Zg-dx-I61" firstAttribute="leading" secondItem="6OQ-qh-R8e" secondAttribute="leading" constant="24" id="m0g-AP-txD"/>
+                            <constraint firstItem="8PB-I1-rEZ" firstAttribute="leading" secondItem="6OQ-qh-R8e" secondAttribute="leading" constant="24" id="po4-9V-WW3"/>
+                            <constraint firstItem="8PB-I1-rEZ" firstAttribute="top" secondItem="6OQ-qh-R8e" secondAttribute="top" constant="24" id="qb1-MY-dmo"/>
+                            <constraint firstItem="6OQ-qh-R8e" firstAttribute="trailing" secondItem="3Zg-dx-I61" secondAttribute="trailing" constant="24" id="vcT-is-ffj"/>
+                            <constraint firstItem="6OQ-qh-R8e" firstAttribute="trailing" secondItem="8PB-I1-rEZ" secondAttribute="trailing" constant="24" id="ya4-an-bV4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="np4-XG-tHK"/>
                 </viewController>
